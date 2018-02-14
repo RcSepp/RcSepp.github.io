@@ -1,0 +1,235 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage[scale=0.8]{geometry} % Reduce document margins
+\setlength{\hintscolumnwidth}{2.8cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%\nopagenumbers
+
+\usepackage{ngerman}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Sebastian}
+\familyname{Klaassen}
+
+\title{\vspace{7mm}Resume}%{Curriculum Vitae}
+\address{500 Tuskegee Dr, Apt 308}{Oak Ridge TN, 37830}
+\mobile{(915)216-6123}
+\email{sebastian.klaassen@outlook.com}
+\extrainfo{www.linkedin.com/in/sebastian-klaassen-349510101/} \homepage{homepage.univie.ac.at/a0929188/}{}
+%\photo[65pt][0.4pt]{Bilder/Foto} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"Zitat" - Autor}
+%\extrainfo
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+\vspace*{-2mm}
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Objective}
+
+\cventry{}{\textnormal{To secure a challenging position in research oriented software engineering}}{}{}{}{}
+
+\vspace{1cm}
+
+%{To secure a challenging position as a research oriented senior software engineer in an industry leading company or research facility}{}{}{}{}
+
+%{To secure a challenging position as a research oriented software engineer in an industry leading company or research facility in the area of visualization or HPC}{}{}{}{}
+%{To secure a challenging position as a research oriented software engineer in an industry leading company or research facility in the visualization, HPC or computer game industry. Preferably with a strong emphasis on home-brewed innovations over off-the-shelf solutions.}{}{}{}{}
+
+%----------------------------------------------------------------------------------------
+%	THESES SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Theses}
+
+%\subsection{Bachelor thesis}
+%\cvitem{Title}{\emph{Solving communication-intensive problems efficiently using on-chip mesh\newpage interconnection networks}}
+%\cvitem{Supervisor}{ao. Univ.-Prof. Dipl.-Ing. Dr. Eduard Mehofer}
+%%\cvitem{Description}{\begin{itemize}
+%%\item We simulated a mesh-connected three dimensional array processor.
+%%\item We developed a runtime in C++, an IDE in Visual Basic and a Python based scripting language for array processors.
+%%\item We studied feasibility, scalability and load balancing of the architecture by implementing matrix multiplication, sorting and ray casting on 2D and 3D meshes.
+%%\end{itemize}}
+%\cvitem{Description}{Design and simulation of a mesh-connected three dimensional array processor.}
+
+%%\subsection{Final thesis - HTL}
+%%\cvitem{Title}{\emph{Automated Guided Vehicle}}
+%%\cvitem{Supervisor}{DI Dr. Christian Zeinar}
+%%\cvitem{Team}{Alexander Pöllmann, Christian Dienbauer, Daniel Beer, Sebastian Klaassen}
+%%\cvitem{Description}{\begin{itemize}
+%%\item We developed a prototype of an automated guided vehicle (AGV) for the in-company transport of small parts.
+%%\item The AGV navigates by detecting lines and switch points on the ground with the 'CMUcam 3' camera system.
+%%\item Stepper motors and navigation system are controlled by a PLC.
+%%\end{itemize}}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Publications}
+
+\subsection{Solving Communication-Intensive Problems Efficiently Using On-Chip Mesh Interconnection Networks}
+\cvitem{}{Thesis and ISC HPC 2016 Research Poster}
+%\cvitem{Supervisor}{ao. Univ.-Prof. Dipl.-Ing. Dr. Eduard Mehofer}
+\cvitem{Description}{Design and simulation of a mesh-connected three dimensional array processor.}
+\cvitem{URL}{\url{http://www.isc-hpc.com/isc16_ap/presentationdetails.htm?t=presentation&o=958&a=select&ra=personendetails}}
+
+\subsection{Interactive Colormapping: Enabling Multiple Data Range and Detailed Views of Ocean Salinity}
+%\cvitem{Authors}{F. Samsel, S. Klaassen, M. Petersen, T. Turton, G. Abram, D. Rogers, J. Ahrens}
+\cvitem{Publisher}{ACM New York, NY, USA ©2016}
+\cvitem{URL}{\url{http://dl.acm.org/citation.cfm?doid=2851581.2851587}}
+%\cvitem{Abstract}{Ocean salinity is a critical component to understanding climate change. Salinity concentrations and temperature drive large ocean currents which in turn drive global weather patterns. Melting ice caps lower salinity at the poles while river deltas bring fresh water into the ocean worldwide. These processes slow ocean currents, changing weather patterns and producing extreme climate events which disproportionally affect those living in poverty. Analysis of salinity presents a unique visualization challenge. Important data are found in narrow data ranges, varying with global location. Changing values of salinity are important in understanding ocean currents, but are difficult to map to colors using traditional tools. Commonly used colormaps may not provide sufficient detail for this data. Current editing tools do not easily enable a scientist to explore the subtleties of salinity. We present a workflow, enabled by an interactive colormap tool that allows a scientist to interactively apply sophisticated colormaps to scalar data. The intuitive and immediate interaction of the scientist with the data is a critical contribution of this work.}
+
+%\subsection{Design and Analysis of a Mesh Connected Array Processor}
+%\cvitem{Authors}{Sebastian Klaassen}
+%\cvitem{Venue}{SC16}
+%\cvitem{Status}{Pending}
+%\cvitem{Abstract}{The potential for concurrent speedup of data parallel software is far from being exhausted. Traditional HPC software engineering focuses on adapting established sequential programming models towards increasingly parallel execution. However, in such programming models communication overhead is considered the dominant limiting factor.
+%Systolic arrays and other array processors specialize on communication by distributing data through an array of processor elements to implement data parallelism. Processors such as the Connection Machine and MasPar MP-1 reached production level, but no architecture has reached the point of being considered a versatile high performance coprocessor. We address shortcomings of previous designs and help to reintroduce array processors for heterogeneous computing.
+%This paper presents the conceptual design of mesh connected 2D and 3D array processors called Mesh Processing Units (MPU) and the implementation of selected algorithms using a domain specific programming language. We analyze performance and scalability of parallel sorting, matrix multiplication and ray tracing on our architecture and compare them to existing solutions on traditional hardware by benchmarking simulations on different mesh sizes. We also outline architectural decisions on the design of interconnection topology and programming model and we discuss advantages and disadvantages of the MPU and similar array processors.
+%The results of our runtime- and utilization benchmarks reveal that MPUs are a capable platform for accelerating communication intensive algorithms and lay the groundwork for further research into efficiency and programmability of mesh connected array processors.}
+
+\subsection{Scalability of Modern Scatterplot Visualizations for Large Image Datasets}
+\cvitem{}{Thesis}
+\cvitem{Description}{Investigating scatterplot scalability both in terms of what is feasable (performance scalability) and what is reasonable (information scalability).}
+
+%----------------------------------------------------------------------------------------
+%	SCIENTIFIC COLLABORATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Scientific Collaborations}
+
+\cventry{08.2017}{Oak Ridge National Lab}{Invited Talk}{Data mining strategies for extracting material properties from scanning transmission electron microscopy images}{}{}
+\cventry{04.2017--08.2017}{Allen Institute for Cell Science}{Design and implementation of an interactive viewer, optimized for perfoarmance and information scalability}{}{}{}
+%\cventry{05.2015--01.2016}{Los Alamos National Lab}{}{}{}{}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+%\subsection{University}
+\cventry{03.2014--10.2017}{MSc in Computer Science - Media Informatics}{University of Vienna}{Vienna}{}{\textit{with distinction}}%{\textit{current GPA: 3.31}}
+\cventry{03.2011--01.2014}{BSc in Computer Science - Scientific Computing}{University of Vienna}{Vienna}{}{}%{\textit{current GPA: 3.16}}
+%\cventry{03.2010--01.2011}{Bachelor Informatik - Technische Informatik}{Technical University of Vienna}{Vienna}{}{}
+
+%\subsection{High school}
+\cventry{06.2009}{Graduation from Technical High School - Mechatronics}{Höhere Technische Bundeslehranstalt Wien 10}{Vienna}{\textit{with distinction}}{}%{\textit{GPA: 4.0}}
+%\cventry{09.2007--06.2009}{HTL Mechatronik}{Höhere Technische Bundeslehranstalt Wien 10}{Vienna}{}{}
+%\cventry{09.2006--06.2007}{School year abroad}{Gemeentelijk Instituut voor Technisch Onderwijs\newpage Overijse}{Belgium}{}{}
+%\cventry{09.2002--06.2006}{HTL Mechatronik}{Höhere Technische Bundeslehranstalt Wien 10}{Vienna}{}{}
+
+%\subsection{Further education}
+\cventry{10.2012--11.2012}{CS188.1x Artificial Intelligence}{BerkleyX}{\url{https://www.edx.org}}{}{\textit{with distinction}}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Work experience}
+
+\cventry{2017}{Allen Institute for Cell Science}{\textsc{Work Contract}}{\url{http://www.allencell.org/}}{}{Creation of a WebGL-based successor for the Interactive Plotting tool on the Allen Cell web page. The tool is capable of interactively rendering datasets of more than a million cells.\\
+}
+
+\cventry{05.2015--02.2016}{Los Alamos National Lab}{\textsc{Internship}}{\url{http://lanl.gov/}}{Los Alamos, NM}{1) Creation of a global view data analysis tool for in-situ exploration of large scale image databases.\\
+2) Creation of an application for interactively designing color maps.\\
+%Details:\\
+%In collaboration with the University of Vienna, the effective visualization of large multidimensional image databases has been studied. A viewer has been created that allows browsing through thousands of images, allowing seamless transitions between a global overview and detailed image inspection.\\
+%The tool ColorMoves for interactive color map creation has been designed, which implements the novel approach of interactively controlling color transitions to better understand scalar data images and design spot-on color maps with a few mouse clicks (see publications section).\\
+}
+
+\cventry{04.2014--04.2015}{University of Vienna - Research group Visualization and Data Analysis}{\textsc{Research Assistant}}{\url{http://cs.univie.ac.at/vda}}{Austria: Vienna}{Implementation of a novel ray tracing algorithm.\\
+%Details:\\
+%Together with Michael Phillips and Alireza Ghane, a novel ray tracing algorithm called Ray-Space Rendering (RaSR) is developed. The aim of RaSR is to speed up global illumination rendering by rendering light rays into a 4D data structure (the ray space). \\
+}
+
+\cventry{08.2008}{International Institute for Applied Systems Analysis}{\textsc{Internship}}{\url{http://www.iiasa.ac.at}}{Austria: Laxenburg}{Assistance with adopting the web interface to JasperReports.\\
+%Details:
+%\begin{itemize}
+%\item I developed test reports for the new web frontend using iReport.
+%\item The reports are populated with data from the webserver using JavaBeans.
+%\end{itemize}
+}
+
+\cventry{08.2007}{International Institute for Applied Systems Analysis}{\textsc{Internship}}{\url{http://www.iiasa.ac.at}}{Austria: Laxenburg}{Preparation of environmental data for database upload.\\
+%Details:
+%\begin{itemize}
+%\item I developed a Visual Basic application that converts environmental data from irregularly formated Excel spreadsheets into a consistent format.
+%\item The converted files (in *.csv format) are uploaded by the system administrator without further modification.
+%\end{itemize}
+}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+\cventry{2017}{SMC Data Challenge 2017}{Smokey Mountain Computational Science and Engineering Conference}{\url{https://smc-datachallenge.ornl.gov/2017/}}{\textbf{Best Solution}}%{for tracking atoms in a sequence of scanning transmission electron microscopy images}
+{Data mining atomically resolved images for material properties}
+\cventry{2009}{ARGE 3D-CAD Competition}{Category: ProEngineer - Advanced}{\url{http://www.3d-cad.at}}{\textbf{1\textsuperscript{st} Place}}{3D model and animation of the thesis \emph{Automated Guided Vehicle}}
+\cventry{2004}{ARGE 3D-CAD Competition}{}{\url{http://www.3d-cad.at}}{\textbf{2\textsuperscript{nd} Place}}{3D model and animation of a recreational vehicle}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Computer skills}
+
+\cvitem{Languages}{C, C++, C\#, Python, Visual Basic, JavaScript, Java, NASM, Matlab, R} %, HTML, \LaTeX} %, XML, XSD, XPath, XSLT, SQL, SPARQL}
+%\cvitem{Disciplines}{Graphics-, game-, network-, user interface- and operating system development}
+\cvitem{Libraries and SDKs}{Direct3D, OpenGL, WebGL, Vulkan, MPI, OpenMP, BLAS, LAPACK, PLASMA, STL, Boost, SQLite, PythonAPI, FFmpeg, Havok Physics}
+\cvitem{Sw. engineering}{UML, Doxygen, Javadoc, JSDoc, GIT, Apache Subversion}
+\cvitem{Software and tools}{Visual Studio, Unity, Eclipse, GCC, GNU Make, LLVM, Flex, GNU Bison, Mathcad, Pro Engineer, Apache Tomcat, TortoiseSVN, WinSCP, PuTTY, Texmaker, GnuPlot} % Windows, Linux, Mac, Microsoft Office, Matlab, Notepad++, Apache Ant
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitem{German}{\textit{Mother tongue}}
+\cvitem{English}{\textit{Oral and written expression: very good (TOEFL iBT score: 107)}}
+\cvitem{Dutch}{\textit{Oral and written expression: good}}
+%\cvitem{French}{\textit{Oral and written expression: basic}}
+
+%----------------------------------------------------------------------------------------
+%	VOLUNTEER WORK SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Volunteer work}
+
+\cventry{12.2013--04.2015}{\normalfont{Voluntary Fireman}}{\textsc{FF Sittendorf}}{\url{http://www.fw-sittendorf.org/}}{}{}
+
+%----------------------------------------------------------------------------------------
+%	MISC SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{General skills and personal life}
+
+%\cvitem{Social}{ability to work in a team, autonomy, sense of responsibility}
+%\cvitem{Hobbies}{Climbing, Motorbiking, Snowboarding, Running, Diving, Fitness}
+%\cvitem{Driver's licenses}{A (motorbike) and B (car)}
+
+\end{document}

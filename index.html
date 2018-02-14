@@ -1,1 +1,118 @@
-We are live
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<!-- BEGIN: Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109180033-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-109180033-1');
+	</script>
+	<!-- END: Global site tag (gtag.js) - Google Analytics -->
+
+	<title>Sebastian Klaassen's Portfolio</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script type="text/javascript" src="lib/showdown.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="lib/selectize.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="lib/selectize.css"/>
+	<link rel="stylesheet" href="lib/photoswipe.css">
+	<link rel="stylesheet" href="lib/photoswipe-default-skin/default-skin.css">
+	<script src="lib/photoswipe.min.js"></script>
+	<script src="lib/photoswipe-ui-default.min.js"></script>
+	<script type="text/javascript" src="lib/gl-matrix.min.js"></script>
+	<script type="text/javascript" src="utility.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="graphics.js"></script>
+	<script type="text/javascript" src="glBanners.js"></script>
+	
+<!--<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+	TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'></script>-->
+</head>
+
+<body onload="onLoad()" onresize="onResize()" class="tex2jax_ignore">
+	<div id="content"></div>
+	<div id='measureDiv' style='position: absolute; height: 1in; width: 1in; visibility: hidden'></div>
+	<div id="navTop">
+		<button id="cmdOpenTopMenu" onclick="cmdOpenTopMenu_onclick(this)">&#8801;</button>
+		<a id="aTitle" href="./index.html">Sebastian Klaassen</a>
+		<p id="aSubtitle">Welcome to my homepage</a>
+		<ul id="ulMain">
+			<li><a href="./index.html">Home</a></li>
+			<li><a href="./index.html?view=publications">Publications</a></li>
+			<li><a href="./index.html?view=projects">Projects</a></li>
+			<li></li>
+		</ul>
+		<div id="navTop_withMenu"></div>
+	</div>
+	
+	<!-- Root element of PhotoSwipe. Must have class pswp. -->
+	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+		<!-- Background of PhotoSwipe.
+			It's a separate element as animating opacity is faster than rgba(). -->
+		<div class="pswp__bg"></div>
+
+		<!-- Slides wrapper with overflow:hidden. -->
+		<div class="pswp__scroll-wrap">
+
+			<!-- Container that holds slides. 
+				PhotoSwipe keeps only 3 of them in the DOM to save memory.
+				Don't modify these 3 pswp__item elements, data is added later on. -->
+			<div class="pswp__container">
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+			</div>
+
+			<!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+			<div class="pswp__ui pswp__ui--hidden">
+
+				<div class="pswp__top-bar">
+
+					<!--  Controls are self-explanatory. Order can be changed. -->
+					<div class="pswp__counter"></div>
+					<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+					<button class="pswp__button pswp__button--share" title="Share"></button>
+					<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+					<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+					<!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+					<!-- element will get class pswp__preloader--active when preloader is running -->
+					<div class="pswp__preloader">
+						<div class="pswp__preloader__icn">
+							<div class="pswp__preloader__cut">
+							<div class="pswp__preloader__donut"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+					<div class="pswp__share-tooltip"></div> 
+				</div>
+
+				<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+				</button>
+
+				<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+				</button>
+
+				<div class="pswp__caption">
+					<div class="pswp__caption__center"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

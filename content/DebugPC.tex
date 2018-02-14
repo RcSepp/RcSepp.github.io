@@ -1,0 +1,25 @@
+\documentclass{article}
+\begin{document}
+
+\section{The Journey}
+During my highschool year in Belgium I spend a lot of time programming in my parent's attic. During that year I thought myself C++ and assembler, wrote my first Direct3D-based computer game and programmed an operating system.
+
+DebugPC was named after it's main purpose: trying to get it to run and teaching me more about low level computer hard- and software than I ever learned at university.
+
+DebugPC consists of a two-stage bootloader (written in NASM) and a small C++ kernel.
+\section{How to write an operating system}
+Writing an operating system is hard. One of the hardest parts is trying to get it to run on different hardware. DebugPC only supports software rendering (using BIOS's standard VGA driver) and only reads from permanent storage using software interrupts (which is slow). Even with those restrictions it runs only from floppy disc (not USB) on a computer with legacy BIOS (no UEFI) or on a few virtual machines (Microsoft Virtual PC works best; VMware and Bochs cause some bugs). But, it works :)
+
+Another hard part is finding reference materials. It seems things have gotten better since 2008. Back then the only good reference available was \cite{http://wiki.osdev.org/Main_Page|OSDev.org}. I used this page and the accompanying forum as a reference for about 90\% of this project. The remaining 10\% came from looking through harware reference manuals. If you can program your ACPI controller based on the reference manual from your mainbord manufacturer, you can consider yourself an expert in operating system development.
+
+Last but not least, when you write an operating system you start from zero. It's like being stranded on an island where, in order to go fishing, you first need to craft a fishing rod. Similarly when programming a kernel, you have no standard library funtions or even hardware interfaces (sound, network, keyboard, mouse, ...) to rely on. For DebugOS is took me a long time to get mouse, keyboard and graphical display output running. But before I could display 'hello world!' on screen, I first had to write routines for font and character encoding. A lot of times you find yourself debugging not with 'printf()', 'assert()' or 'cout', but by blinking individual pixles on screen or inventing recognizable beeping sequences for your PC speaker to indicate states of your kernel. These things can be frustrating, but I also experienced some of my most fun and rewarding moments as a programmer writing code for DebugPC.
+\section{What does DebugPC do?}
+In short, DebugPC boots from floppy disc, initializes some hardware, renders a 3D object on screen and powers down when the escape-key is pressed.
+Here are the individual stages in detail:
+\begin{itemize}
+\item 1st bootloader stage: Switches from 16bit real mode to 32bit protected mode and loads stage two.
+\item 2st bootloader stage: Switchas from textual to graphical VGA mode, loads the compiled C++ kernel and calls the kernel's 'main()' function.
+\item C++ kernel: Sets up interrupt service routines, enables mouse and keyboard, configures ACPI shutdown capability, loads a 3D model (in wavefront *.obj file format) from the floppy disk and repeatedly renders the 3D model to screen. The view-transform of the rendered object is controlled by moving the mouse.
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,239 @@
+{
+	"content": [
+		{
+			"type": "publication",
+			"subtype": "Thesis",
+			"year": 2017,
+			"title": "Scalability of Modern Scatterplot Visualizations for Large Image Datasets",
+			"brief": "My Master's thesis about visualizing large image databases with scatterplot-based tools.",
+			"details": "file:///content/Scalability_of_Scatterplots.md",
+			"languages": ["C#", "JavaScript"],
+			"images": [
+				"ScalabilityOfScatterplots_GlobalView.png|700|700|The GlobalView image viewer",
+				"ScalabilityOfScatterplots_InteractiveCellPlot.png|1234|912|The Interactive Cell Plot sandbox interface",
+				"ScalabilityOfScatterplots_LabelPlacement.png|1024|1024|Density map based label placement",
+				"ScalabilityOfScatterplots_Clustering.png|1024|1024|Density map based clustering"
+			],
+			"links": {
+				"Full Thesis": "content/Scalability_of_Scatterplots.pdf",
+				"Defense Slides": "content/ScalabilityOfScatterplots_Slides.pdf"
+			}
+		},
+		{
+			"type": "publication",
+			"subtype": "Thesis",
+			"year": 2013,
+			"title": "Solving Communication-Intensive Problems Efficiently Using On-Chip Mesh Interconnection Networks",
+			"brief": "My Bachelor's thesis about a mesh-connected array processor architecture was presented with a research poster at ISC HPC 2016.",
+			"abstract": "Many mathematical procedures and physical processes are based on highly parallel interaction of information carriers. Traditional concurrent software focuses on adapting established sequential programming models towards increasingly parallel execution. However, communication overhead is still considered a limiting factor, because none of the current processors are really as fast at communicating as they are at computing. Since the late 1970s systolic arrays and other array processors have been developed that exploit the flow of data to implement parallelism, but none of them got engineered to a point where they could be considered general purpose coprocessors. We propose a processor architecture based on a two or three dimensional mesh of processor cores, called the Mesh Processing Unit (MPU). The MPU also represents the first attempt of mapping domain data flow directly to algorithmic topology. The network connecting processors is not a black box, but it‘s the framework for the algorithms that are designed on-top of it. Our work consists of finding a versatile topology for an MPU, simulating program execution by designing a domain specific programing language for it, designing a representative set of algorithms using this language, and evaluating performance of the designed algorithms compared to existing solutions on traditional hardware. The results of our runtime- and utilization benchmarks reveal that MPUs are a capable platform for modern data flow hardware and enable us to invest further research into MPU architecture and algorithm design, as well as the design of a hardware prototype.",
+			"conference": "ISC HPC 2016",
+			"languages": ["C++", "Python", "Visual Basic"],
+			"images": [
+				"MeshInterconnectionNetworks_IDE.png|1600|860"
+			],
+			"thumbnail": "content/thumbnails/Mesh_Interconnection_Networks.jpg",
+			"links": {
+				"Poster": "content/Mesh_Interconnection_Networks.pdf",
+				"ISC 2016 program link": "http://www.isc-hpc.com/isc16_ap/presentationdetails.htm?t=presentation&o=958&a=select"
+			}
+		},
+		{
+			"type": "publication",
+			"subtype": "Full Paper",
+			"year": 2016,
+			"title": "Interactive Colormapping: Enabling Multiple Data Range and Detailed Views of Ocean Salinity",
+			"brief": "CHI 2016 paper about ColorMoves",
+			"abstract": "Ocean salinity is a critical component to understanding climate change. Salinity concentrations and temperature drive large ocean currents which in turn drive global weather patterns. Melting ice caps lower salinity at the poles while river deltas bring fresh water into the ocean worldwide. These processes slow ocean currents, changing weather patterns and producing extreme climate events which disproportionally affect those living in poverty. Analysis of salinity presents a unique visualization challenge. Important data are found in narrow data ranges, varying with global location. Changing values of salinity are important in understanding ocean currents, but are difficult to map to colors using traditional tools. Commonly used colormaps may not provide sufficient detail for this data. Current editing tools do not easily enable a scientist to explore the subtleties of salinity. We present a workflow, enabled by an interactive colormap tool that allows a scientist to interactively apply sophisticated colormaps to scalar data. The intuitive and immediate interaction of the scientist with the data is a critical contribution of this work.",
+			"conference": "CHI 2016",
+			"thumbnail": "content/thumbnails/Interactive_Colormapping.jpg",
+			"links": {
+				"ACM Digital Library": "http://dl.acm.org/citation.cfm?doid=2851581.2851587"
+			}
+		},
+		{
+			"type": "publication",
+			"subtype": "Research Poster",
+			"year": 2017,
+			"title": "Data Mining Atomically Resolved Images for Material Properties",
+			"brief": "Award winning data challenge project for detecting, classifying and tracking atoms in scanning transmission electron microscopy images",
+			"abstract": "Capturing atomic motion in spectroscopy for observation and quantitatively correlating structure-property relationships with functionality generates insight into physics and chemistry of 2D materials. Feature detection is a widely used technique for extracting atomic motion vectors. We introduce a set of algorithms for tracking motion of molybdenum and selenium atoms, captured throughout a time sequence of scanning transmission electron microscopy images for density functional theory simulations. The discussed set of algorithms efficiently detects, classifies and tracks atoms in the MoSe2 dataset of the 2017 Smokey Mountain Computational Science and Engineering Conference challenge.",
+			"conference": "Smokey Mountain Computational Sciences and Engineering Conference",
+			"details": "file:///content/Material_Mining.md",
+			"languages": ["C++", "C#"],
+			"images": ["Material_Mining.mp4|512|512"],
+			"thumbnail": "content/thumbnails/Material_Mining_Poster.jpg",
+			"links": {
+				"Poster": "content/Material_Mining_Poster.pdf",
+				"Conference": "https://smc.ornl.gov/",
+				"Data challenge": "https://smc-datachallenge.ornl.gov/2017/"
+			}
+		},
+		{
+			"type": "project",
+			"subtype": "Library",
+			"year": 2010,
+			"title": "IronSightEngine",
+			"brief": "A unified C++ framework, consisting of 24 individual modules (over 70 thousand lines of code).",
+			"details": "file:///content/IronSightEngine.md",
+			"languages": ["C++", "Python"],
+			"images": []
+		},
+		{
+			"type": "project",
+			"subtype": "Tool",
+			"year": 2015,
+			"title": "ColorMoves",
+			"brief": "An interactive color mapping tool that helps scientists to better understand and communicate their data.",
+			"details": "file:///content/ColorMoves.md",
+			"languages": ["JavaScript"],
+			"images": ["ColorMoves.jpg|1919|1298", "ColorMoves_Comparison.jpg|2048|800", "ColorMoves_ExampleWorkflow.mp4|1920|1080"],
+			"thumbnail": "content/thumbnails/ColorMoves.jpg",
+			"links": {
+				"Latest stable version": "http://homepage.univie.ac.at/a0929188/ColorMoves/",
+				"Project home": "http://sciviscolor.org/home/colormoves/",
+				"License": "http://homepage.univie.ac.at/a0929188/ColorMoves/LICENSE.txt|MIT License"
+			}
+		},
+		{
+			"type": "project",
+			"subtype": "Tool",
+			"year": 2015,
+			"title": "GlobalView",
+			"brief": "A data analysis tool for in-situ exploration of large scale image databases.",
+			"languages": ["C#"],
+			"images": ["GlobalView_visual_mapping.mp4|1920|1200", "GlobalView_plotMapping.png|1920|958"],
+			"thumbnail": "content/thumbnails/GlobalView.jpg",
+			"links": {
+				"GitHub": "https://github.com/RcSepp/global_view"
+			}
+		},
+		{
+			"type": "project",
+			"subtype": "Library",
+			"year": 2017,
+			"title": "ExaPlot",
+			"brief": "A scatterplot viewer written in JavaScript that uses optimized WebGL code to view large multi-dimensional datasets.",
+			"details": "<h3>Credits</h3><br><h4>Viewer</h4><br>The viewer is based on <a href='http://www.allencell.org/interactive-plotting.html' target='_blank' rel='noopener noreferrer'>Interactive Plotting</a> by Allen Institute for Cell Science.<br><br><em>© 2016 Allen Institute for Cell Science. Project Overview. Available from: <a href='http://alleninstitute.org/what-we-do/cell-science/our-research/project-overview/' target='_blank' rel='noopener noreferrer'>alleninstitute.org/what-we-do/cell-science/our-research/project-overview/</a></em><br><h4>Dataset and images</h4><br>Dataset and images credit: <a href='http://www.allencell.org/' target='_blank' rel='noopener noreferrer'>Allen Institute for Cell Science, a division of the Allen Institute</a>",
+			"languages": ["JavaScript"],
+			"images": ["ExaPlot.png|1919|1050"],
+			"thumbnail": "content/thumbnails/ExaPlot.jpg",
+			"links": {
+				"GitHub": "https://github.com/RcSepp/GlobalView.js",
+				"Live version": "http://homepage.univie.ac.at/a0929188/GlobalView/",
+				"License": "http://homepage.univie.ac.at/a0929188/GlobalView/LICENSE.txt|MIT License"
+			}
+		},
+		{
+			"type": "project",
+			"subtype": "Operating System",
+			"year": 2006,
+			"title": "DebugPC",
+			"brief": "An operating system that I wrote from scratch during highschool out of sheer curiosity about how a computer boots.",
+			"abstract": "Back in technical high school (I majored in machatronics) I asked several computer science and electronics teachers the following question: \"How does bootstrap, the process of loading the basic software into the memory of a computer after power-on or general reset <a href='https://en.wikipedia.org/wiki/Bootstrapping'>[Wikipedia]</a>, work?\". Unfortunately not a single teach could provide me with a satisfying answer. So I decided to answer it myself<br>... by programming an operating system!",
+			"details": "file:///content/DebugPC.md",
+			"languages": ["NASM", "C++"],
+			"images": ["DebugPC.png|652|559"],
+			"thumbnail": "content/thumbnails/DebugPC.jpg",
+			"meta": "winter 2007/2008",
+			"links": {
+				"A posting of DebugPC in the OSDev.org forum": "http://forum.osdev.org/viewtopic.php?f=1&t=12087&p=135149#p135149"
+			}
+		},
+		{
+			"type": "project",
+			"subtype": "Device",
+			"year": 2009,
+			"title": "Automated Guided Vehicle",
+			"brief": "Together with A.M. Pöllmann, I created an Automated Guided vehicle as final thesis for technical highschool.",
+			"abstract": "During the last year of our technical high school, I worked with Alexander M. Pöllmann on an Automated Guided Vehicle (AGV) for the in-company transportation of small parts. The prototype was successfully used at <a href=http://www.evva.at/>EVVA Austria</a>.<br><br>The AGV follows preprogrammed routes through the company by following drawn lines on the ground. The lines are detected by a camera system <a href=http://www.cmucam.org/>(CMUcam3)</a>, which feeds the vehicles Programmable Logic Controller (PLC). The PLC handles navigation through the programmed routes and controlls the two stepper motors that move the vehicle. To avoid collisions with static or moving obstacles, the AGV is equipped with both contact- and contactless sensors.<br><br>The thesis consists of the AGV itself (hardware), the software for both PLC (navigation and motor control) and CMUcam3 (visual line and intersection detection), a 3D model of the AGV that won the national CAD competition in 2009 <a href=http://www.3d-cad.at/fileadmin/Daten/Wettbewerbe/2009/Ergebnisse_ProE_Wettbewerb_2009.pdf>(2009 ARGE 3D-CAD results (German))</a> and the written thesis.",
+			"languages": ["C", "B&R Automation Basic"],
+			"images": ["AGV_1.png|222|321", "AGV_2.png|263|355", "AGV.mp4|1280|960", "AGV_3.png|94|149", "AGV_4.png|94|149", "AGV_5.png|94|149", "AGV_6.png|94|149"],
+			"thumbnail": "content/thumbnails/AGV.jpg"
+		},
+		{
+			"type": "project",
+			"subtype": "Tool",
+			"year": 2013,
+			"title": "Raytracer",
+			"brief": "Raytracer with refractions, bumpmapping and supersampling",
+			"languages": ["C++"],
+			"images": ["Raytracer.png|1024|1024"],
+			"thumbnail": "content/thumbnails/Raytracer.jpg",
+			"meta": "University of Vienna - Introduction to Computer Graphics (fall 2013) - Lab 4"
+		},
+		{
+			"type": "project",
+			"subtype": "Game",
+			"year": 2014,
+			"title": "PoorTogether",
+			"brief": "A social game about poverty and friendship.",
+			"details": "file:///content/PoorTogether.md",
+			"languages": ["C#"],
+			"images": ["PoorTogether_PathFinding.mp4|1024|768"],
+			"thumbnail": "content/thumbnails/PoorTogether.jpg",
+			"meta": "University of Vienna - Game Design (fall 2014) - Semester Project"
+		},
+		{
+			"type": "project",
+			"subtype": "Game",
+			"year": 2006,
+			"title": "AirsoftCombat",
+			"brief": "A first person shooter programmed from scratch",
+			"details": "file:///content/AirsoftCombat.md",
+			"languages": ["C++"],
+			"thumbnail": "content/thumbnails/AirsoftCombat.jpg",
+			"images": ["AirsoftCombat.png|1616|1061", "AirsoftCombat_Level.png|1473|973", "AirsoftCombat_WalkAnimation.png|930|795"]
+		},
+		{
+			"type": "project",
+			"subtype": "Game",
+			"year": 2013,
+			"title": "TETRIS Powergrid",
+			"brief": "An addictive Tetris game with HDR (high dynamic range) lighting effects.",
+			"languages": ["JavaScript"],
+			"images": ["TETRIS_Powergrid_1.png|800|600", "TETRIS_Powergrid_2.png|800|600"],
+			"thumbnail": "content/thumbnails/TETRIS_Powergrid.jpg",
+			"meta": "University of Vienna - Introduction to Computer Graphics (fall 2013) - Lab 1",
+			"links": {
+				"Play online": "http://homepage.univie.ac.at/a0929188/TETRIS_Powergrid/",
+				"License": "http://homepage.univie.ac.at/a0929188/TETRIS_Powergrid/LICENSE.txt|MIT License"
+			}
+		},
+		{
+			"type": "project",
+			"subtype": "Game",
+			"year": 2016,
+			"title": "HotPotato",
+			"brief": "A player-versus-AI arcade game.",
+			"details": "file:///content/HotPotato.md",
+			"languages": ["C#"],
+			"images": ["HotPotato.mp4|1024|768"],
+			"thumbnail": "content/thumbnails/HotPotato.jpg",
+			"meta": "University of Vienna - Gaming Technologies (spring 2016) - Semester Project"
+		},
+		{
+			"type": "project",
+			"subtype": "Game",
+			"year": 2013,
+			"title": "TinyMiner",
+			"brief": "A Minecraft-like game using a geometry shader to render boxes and the Havok engine for physics.",
+			"details": "file:///content/TinyMiner.md",
+			"languages": ["C++"],
+			"images": ["TinyMiner.png|1920|1160"],
+			"thumbnail": "content/thumbnails/TinyMiner.jpg",
+			"meta": "University of Vienna - Render Engines (fall 2013) - Semester Project"
+		},
+		{
+			"type": "project",
+			"subtype": "Animation",
+			"year": 2011,
+			"title": "Use Case Diagram Animaton",
+			"brief": "A little animation to grab the attention during a software engineering presentation.",
+			"details": "<h2>Description</h2>The frames of the animation are drawn with VB.NET using GDI+.",
+			"languages": ["VB.NET"],
+			"images": ["UseCaseAnimation.mp4|1280|720"],
+			"thumbnail": "content/thumbnails/UseCaseAnimation.jpg",
+			"meta": "University of Vienna - Software Engineering (fall 2011) - Presentation"
+		}
+	]
+}
