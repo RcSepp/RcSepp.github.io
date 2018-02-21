@@ -50,20 +50,6 @@ String.prototype.replaceTex = function(cbk) {
 			if(keywordEnd - matchBegin === 1)
 				continue; // Ignore single \
 			
-			// Skip [param]
-			if (this[i] === '[')
-			{
-				++i;
-				for (var d = 1; i < this.length; ++i)
-				{
-					if (this[i] === '[')
-						++d;
-					else if (this[i] === ']' && --d == 0)
-						break;
-				}
-				++i;
-			}
-			
 			// Find {param}*
 			var params = [];
 			while (true)
@@ -71,6 +57,20 @@ String.prototype.replaceTex = function(cbk) {
 				// Skip white-space
 				while (i < this.length && /\s/i.test(this[i])) ++i;
 				if (i == this.length) break;
+				
+				// Skip [param]
+				if (this[i] === '[')
+				{
+					++i;
+					for (var d = 1; i < this.length; ++i)
+					{
+						if (this[i] === '[')
+							++d;
+						else if (this[i] === ']' && --d == 0)
+							break;
+					}
+					++i;
+				}
 				
 				if (this[i] !== '{')
 					break;
@@ -155,13 +155,23 @@ return;*/
 						linkText = link.substr(p + 1);
 						link = link.substr(0, p);
 					}
-					return "<a href='" + link + "' target='_blank'>" + linkText + "</a>";
+					//return "<a href='" + link + "' target='_blank'>" + linkText + "</a>";
+					return "";
 				case 'item': return "<li>", "</li>";
 				case 'caption': return " " + params[0];
 				
-				case 'section': return "<tr><th align='right' valign='top' style='width: 150px; background-color: lightblue;'></th><th valign='top' style='color: blue; background-color: lightblue;'>" + params + "</th></tr>";
+				case 'section': return "<tr><th align='right' valign='top' style='width: 150px;'></th><th valign='top'>" + params + "</th></tr>";
 				case 'subsection': return "<tr><td align='right' valign='top'></td><td valign='top' style='color: blue;'>" + params + "</td></tr>";
 				case 'cvitem': return "<tr><td align='right' valign='top'>" + params[0] + "</td><td valign='top'>" + params.slice(1).join(', ') + "</td></tr>";
+				case 'linkentry':
+					var target = undefined;
+					if (params.length !== 0)
+					{
+						var targetParam = params.shift();
+						if (isString(targetParam) && targetParam.length !== 0)
+							target = "index.html?view=" + targetParam;
+					}
+					// Falls through
 				case 'cventry':
 					var details = "";
 					if (params.length >= 1 && params[1] !== '') details = "<b>" + params[1] + "</b>";
@@ -170,8 +180,10 @@ return;*/
 					if (params.length >= 4 && params[4] !== '') details = (details === '' ? '' : details + ", ") + params[4];
 					if (details !== '') details += ".";
 					if (params.length >= 5 && params[5] !== '') details = (details === '' ? '' : details + "<br>") + params[5];
-					return "<tr><td align='right' valign='top'>" + params[0] + "</td><td valign='top'>" + details + "</td></tr>";
-					
+					if (target)
+						return "<tr class='linkRow'><td align='right' valign='top'><a class='linkRow' href='" + target + "'>" + params[0] + "</a></td><td valign='top'><a class='linkRow' href='" + target + "'>" + details + "</a></td></tr>";
+					else
+						return "<tr><td align='right' valign='top'>" + params[0] + "</td><td valign='top'>" + details + "</td></tr>";
 				case 'begin':
 				case 'end':
 				case 'moderncvstyle':
@@ -190,6 +202,9 @@ return;*/
 				case 'extrainfo':
 				case 'homepage':
 				case 'makecvtitle':
+				case 'newcommand':
+					console.log(cmd);
+					console.log(params);
 					return ''; // Ignore
 				default: return match; // Keep
 				}
@@ -204,7 +219,10 @@ return;*/
 			// Remove newline
 			tex = tex.replace(/\\\\/g, "<br>");
 			
-			tex = "<br><table style='width: 100%;text-align: left;'>" + tex + "</table>";
+			// Handle escaped characters
+			tex = tex.replace(/\\#/g, "#");
+			
+			tex = "<br><table class='resumeTable' cellspacing='0' cellpadding='0'>" + tex + "</table>";
 			//console.log(tex);
 			
 			var element = document.createElement("div"); 
@@ -212,6 +230,12 @@ return;*/
 			element.className = "tex2jax_process";
 			element.innerHTML = tex;
 			divContent.appendChild(element);
+			
+			// Set anchor height to parent height
+			$('a.linkRow').each(function() {
+				var $a = $(this);
+				$a.height($a.closest('td').height());
+			});
 		}
 	}
 	request.send();
