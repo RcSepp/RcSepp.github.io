@@ -18,5 +18,5 @@ ___
 ## Lessons learned
 Besides being my first large C++ project, I learned some valuable lessons from this project.
 Most notably:
-1. For future projects I decided to separate game and engine. This decission has led to the [IronSightEngine](http://homepage.univie.ac.at/a0929188/index.html?view=IronSightEngine)
+1. For future projects I decided to separate game and engine. This decission has led to the [IronSightEngine](https://rcsepp.github.io/index.html?view=IronSightEngine)
 2. For future projects I decided to outsource some of the algorithmic heavy lifting, by using a commercial physics engine. One of the modules of the IronSightEngine interfaces the Havok physics engine.
