@@ -89,9 +89,9 @@
 			"images": ["ColorMoves.jpg|1919|1298", "ColorMoves_Comparison.jpg|2048|800", "ColorMoves_ExampleWorkflow.mp4|1920|1080"],
 			"thumbnail": "content/thumbnails/ColorMoves.jpg",
 			"links": {
-				"Latest stable version": "http://homepage.univie.ac.at/a0929188/ColorMoves/",
+				"Latest stable version": "https://rcsepp.github.io/ColorMoves/",
 				"Project home": "http://sciviscolor.org/home/colormoves/",
-				"License": "http://homepage.univie.ac.at/a0929188/ColorMoves/LICENSE.txt|MIT License"
+				"License": "https://rcsepp.github.io/ColorMoves/LICENSE.txt|MIT License"
 			}
 		},
 		{
@@ -119,8 +119,8 @@
 			"thumbnail": "content/thumbnails/ExaPlot.jpg",
 			"links": {
 				"GitHub": "https://github.com/RcSepp/GlobalView.js",
-				"Live version": "http://homepage.univie.ac.at/a0929188/GlobalView/",
-				"License": "http://homepage.univie.ac.at/a0929188/GlobalView/LICENSE.txt|MIT License"
+				"Live version": "https://rcsepp.github.io/GlobalView/",
+				"License": "https://rcsepp.github.io/GlobalView/LICENSE.txt|MIT License"
 			}
 		},
 		{
@@ -187,6 +187,17 @@
 		{
 			"type": "project",
 			"subtype": "Game",
+			"year": 2008,
+			"title": "DrumTrainer",
+			"brief": "A rhythm game for electronic drums",
+			"details": "file:///content/DrumTrainer.md",
+			"languages": ["C++", "C#"],
+			"thumbnail": "content/thumbnails/DrumTrainer.jpg",
+			"images": ["DrumTrainer_RBC.jpg|1024|768", "DrumTrainer.mp4|1280|720", "DrumTrainer_MainMenu.jpg|635|620"]
+		},
+		{
+			"type": "project",
+			"subtype": "Game",
 			"year": 2013,
 			"title": "TETRIS Powergrid",
 			"brief": "An addictive Tetris game with HDR (high dynamic range) lighting effects.",
@@ -195,8 +206,8 @@
 			"thumbnail": "content/thumbnails/TETRIS_Powergrid.jpg",
 			"meta": "University of Vienna - Introduction to Computer Graphics (fall 2013) - Lab 1",
 			"links": {
-				"Play online": "http://homepage.univie.ac.at/a0929188/TETRIS_Powergrid/",
-				"License": "http://homepage.univie.ac.at/a0929188/TETRIS_Powergrid/LICENSE.txt|MIT License"
+				"Play online": "https://rcsepp.github.io/TETRIS_Powergrid/",
+				"License": "https://rcsepp.github.io/TETRIS_Powergrid/LICENSE.txt|MIT License"
 			}
 		},
 		{
@@ -222,6 +233,17 @@
 			"images": ["TinyMiner.png|1920|1160"],
 			"thumbnail": "content/thumbnails/TinyMiner.jpg",
 			"meta": "University of Vienna - Render Engines (fall 2013) - Semester Project"
+		},
+		{
+			"type": "project",
+			"subtype": "Tool",
+			"year": 2018,
+			"title": "LBSS Flashcard App",
+			"brief": "An Android app for learning Sinhala using flashcards",
+			"details": "file:///content/LbssApp.md",
+			"languages": ["C++", "C#"],
+			"thumbnail": "content/thumbnails/LbssApp.jpg",
+			"images": ["LbssApp_MainMenu.jpg|1080|1920", "LbssApp_StudyByListening.jpg|1080|1920", "LbssApp_StudyByReading.jpg|1080|1920", "LbssApp_StudyByWriting.jpg|1080|1920", "LbssApp_ViewPersonalProgress.jpg|1080|1920", "LbssApp_SelectChapters.jpg|1080|1920", "LbssApp_DesktopProgram.jpg|686|577", "LbssApp_PhraseImportTool.jpg|920|676"]
 		},
 		{
 			"type": "project",
