@@ -52,6 +52,20 @@
 		},
 		{
 			"type": "publication",
+			"subtype": "Full Paper",
+			"year": 2018,
+			"title": "ColorMoves: Real-time Interactive Colormap Construction for Scientific Visualization",
+			"id": "ColorMoves_Paper",
+			"brief": "CG&A paper about ColorMoves",
+			"abstract": "This article presents ColorMoves, an interactive tool that promotes exploration of scientific data through artist-driven color methods in a unique and transformative way. We discuss the power of contrast in scientific visualization, the design of the ColorMoves tool, and the tools application in several science domains.",
+			"journal": "CG&A volume 38, issue 1",
+			"thumbnail": "content/thumbnails/ColorMoves_Paper.jpg",
+			"links": {
+				"IEEE Xplore Digital Library": "http://ieeexplore.ieee.org/abstract/document/8309996/"
+			}
+		},
+		{
+			"type": "publication",
 			"subtype": "Research Poster",
 			"year": 2017,
 			"title": "Data Mining Atomically Resolved Images for Material Properties",
