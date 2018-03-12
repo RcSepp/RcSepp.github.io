@@ -241,8 +241,11 @@ return;*/
 	request.send();
 }
 
-var makeId = function(title) {
-	var id = title.replaceAll(' ', '');
+var makeId = function(title, id) {
+	if (id)
+		return id;
+	
+	id = title.replaceAll(' ', '');
 	var p = id.indexOf(':');
 	if (p !== -1)
 		id = id.substr(0, p);
@@ -371,7 +374,7 @@ Oak Ridge TN, 37830<br>
 				
 				///>>> Add banner
 				
-				var id = makeId(c.title);
+				var id = makeId(c.title, c.id);
 				var thumbnail = c.thumbnail;// || (c.images && c.images.length !== 0 ? c.images[0] : null);
 				
 				var banner = addElement(divContent, "a", { id: "projectBanner", className: "content", href: "./index.html?view=" + id, content: c, index: i });
@@ -405,12 +408,12 @@ Oak Ridge TN, 37830<br>
 		break;
 		
 	default:
-		var c = content.find(function(c) { return makeId(c.title) === view; });
+		var c = content.find(function(c) { return makeId(c.title, c.id) === view; });
 		if (c)
 		{
 			// >>> Create content page
 			
-			var id = makeId(c.title);
+			var id = makeId(c.title, c.id);
 			
 			if (c.images && c.images.length !== 0)
 			{
@@ -580,14 +583,14 @@ videosrc: imageUrl
 			{
 				var cmdPrev = addElement(divContent, "button", { innerText: "Prev" });
 				cmdPrev.onclick = function() {
-					window.location.href = "./index.html?view=" + makeId(content[index - 1].title);
+					window.location.href = "./index.html?view=" + makeId(content[index - 1].title, content[index - 1].id);
 				};
 			}
 			if (index + 1 < content.length && content[index + 1].type == )TODO
 			{
 				var cmdNext = addElement(divContent, "button", { innerText: "Next" });
 				cmdNext.onclick = function() {
-					window.location.href = "./index.html?view=" + makeId(content[index + 1].title);
+					window.location.href = "./index.html?view=" + makeId(content[index + 1].title, content[index + 1].id);
 				};
 			}
 			var cmdBack = addElement(divContent, "button", { innerText: "Back" });

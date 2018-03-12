@@ -409,7 +409,7 @@ function GLBanners(canvas, gl, content, contentType)
 					p[1] >= canvasBorderWidth + banners[i].pos * (bannerHeight + bannerDistance) &&
 					p[1] < canvasBorderWidth + banners[i].pos * (bannerHeight + bannerDistance) + bannerHeight)
 				{
-					window.location.href = "./index.html?view=" + makeId(banners[i].content.title);
+					window.location.href = "./index.html?view=" + makeId(banners[i].content.title, banners[i].content.id);
 					break;
 				}
 	};

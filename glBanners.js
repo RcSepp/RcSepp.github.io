@@ -498,9 +498,9 @@ function GLBanners(canvas, gl, content, contentType, skipIntroAnimation)
 					p[1] < canvasBorderWidth + banners[i].pos * (bannerHeight + bannerDistance) + bannerHeight)
 				{
 					if (event.ctrlKey)
-						window.open("./index.html?view=" + makeId(banners[i].content.title),'_blank');
+						window.open("./index.html?view=" + makeId(banners[i].content.title, banners[i].content.id),'_blank');
 					else
-						window.location.href = "./index.html?view=" + makeId(banners[i].content.title);
+						window.location.href = "./index.html?view=" + makeId(banners[i].content.title, banners[i].content.id);
 					break;
 				}
 	};
