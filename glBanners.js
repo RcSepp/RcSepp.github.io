@@ -20,7 +20,7 @@ function GLBanners(canvas, gl, content, contentType, skipIntroAnimation)
 		gl_Position = matWorldViewProj * vec4(vpos, 1.0);
 		gl_Position.z = clamp(gl_Position.z, 0.00001, 1.0);
 		gl_Position.xy += gl_Position.z * zScale;
-		gl_Position.z = 1.0 - gl_Position.z;
+		gl_Position.z = clamp(1.0 - gl_Position.z, 0.0, 0.9999);
 		uv = vtexcoord;
 	}
 	`;
