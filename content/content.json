@@ -133,7 +133,7 @@
 			"thumbnail": "content/thumbnails/ExaPlot.jpg",
 			"links": {
 				"GitHub": "https://github.com/RcSepp/GlobalView.js",
-				"Live version": "https://rcsepp.github.io/GlobalView/",
+				"Live version": "http://homepage.univie.ac.at/sebastian.klaassen/ExaPlot/",
 				"License": "https://rcsepp.github.io/GlobalView/LICENSE.txt|MIT License"
 			}
 		},
