@@ -103,7 +103,7 @@
 			"images": ["ColorMoves.jpg|1919|1298", "ColorMoves_Comparison.jpg|2048|800", "ColorMoves_ExampleWorkflow.mp4|1920|1080"],
 			"thumbnail": "content/thumbnails/ColorMoves.jpg",
 			"links": {
-				"Latest stable version": "https://rcsepp.github.io/ColorMoves/",
+				"Latest release": "http://sciviscolor.org/ColorMoves/",
 				"Project home": "http://sciviscolor.org/home/colormoves/",
 				"License": "https://rcsepp.github.io/ColorMoves/LICENSE.txt|MIT License"
 			}
