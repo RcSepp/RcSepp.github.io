@@ -155,8 +155,8 @@ return;*/
 						linkText = link.substr(p + 1);
 						link = link.substr(0, p);
 					}
-					//return "<a href='" + link + "' target='_blank'>" + linkText + "</a>";
-					return "";
+					return "<a href='" + link + "' target='_blank'>" + linkText + "</a>";
+					//return "";
 				case 'item': return "<li>", "</li>";
 				case 'caption': return " " + params[0];
 				
