@@ -274,8 +274,7 @@ function onContentLoaded(content, view)
 	case null:
 		addElement(divContent, "pre", { innerHTML:
 `
-<img src="me.jpg" style="max-width: 100%"></img>
-<h2>Dipl.-Ing. Sebastian Klaassen</h2>
+<h2>Sebastian Klaassen</h2>
 Computer Scientist<br>
 Oak Ridge TN, 37830<br>
 <img src="email.jpg"></img>
