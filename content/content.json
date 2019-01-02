@@ -85,12 +85,42 @@
 		{
 			"type": "project",
 			"subtype": "Library",
+			"year": 2018,
+			"title": "asyncframes",
+			"brief": "A parallel programming model based on Python coroutines.",
+			"details": "file:///content/asyncframes.md",
+			"languages": ["Python"],
+			"images": [],
+			"links": {
+				"GitHub repository": "https://github.com/RcSepp/asyncframes",
+				"Documentation": "https://asyncframes.readthedocs.io",
+				"License": "https://raw.githubusercontent.com/RcSepp/asyncframes/master/LICENSE|MIT License"
+			}
+		},
+		{
+			"type": "project",
+			"subtype": "Library",
 			"year": 2010,
 			"title": "IronSightEngine",
 			"brief": "A unified C++ framework, consisting of 24 individual modules (over 70 thousand lines of code).",
 			"details": "file:///content/IronSightEngine.md",
 			"languages": ["C++", "Python"],
 			"images": []
+		},
+		{
+			"type": "project",
+			"subtype": "Web Service",
+			"year": 2018,
+			"title": "MODIS REST Web Service",
+			"brief": "A web interface for biogeochemistry land products from the MODIS and VIIRS satellites.",
+			"languages": ["Python"],
+			"images": [],
+			"thumbnail": "content/thumbnails/MODIS_banner.jpg",
+			"links": {
+				"API Home": "https://modis.ornl.gov/data/modis_webservice.html",
+				"API User Interface": "https://modis.ornl.gov/rst/ui/",
+				"MODIS Home": "https://modis.ornl.gov"
+			}
 		},
 		{
 			"type": "project",
@@ -136,6 +166,17 @@
 				"Live version": "http://homepage.univie.ac.at/sebastian.klaassen/ExaPlot/",
 				"License": "https://rcsepp.github.io/GlobalView/LICENSE.txt|MIT License"
 			}
+		},
+		{
+			"type": "project",
+			"subtype": "Tool",
+			"year": 2018,
+			"title": "DAAC Metrics Processor and Dashboard",
+			"brief": "A unified framework for running utility scripts at the ORNL Data Active Archive Center.",
+			"details": "file:///content/DaacMetricsDashboard.md",
+			"languages": ["Python", "JavaScript"],
+			"images": ["DaacMetricsDashboard.png|1016|638"],
+			"thumbnail": "content/thumbnails/DaacMetricsDashboard.jpg"
 		},
 		{
 			"type": "project",
