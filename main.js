@@ -163,6 +163,15 @@ return;*/
 				case 'section': return "<tr><th align='right' valign='top' style='width: 150px;'></th><th valign='top'>" + params + "</th></tr>";
 				case 'subsection': return "<tr><td align='right' valign='top'></td><td valign='top' style='color: blue;'>" + params + "</td></tr>";
 				case 'cvitem': return "<tr><td align='right' valign='top'>" + params[0] + "</td><td valign='top'>" + params.slice(1).join(', ') + "</td></tr>";
+				case 'linksection':
+					var target = undefined;
+					if (params.length !== 0)
+					{
+						var targetParam = params.shift();
+						if (isString(targetParam) && targetParam.length !== 0)
+							target = "index.html?view=" + targetParam;
+					}
+					return '<a class="linkRow" href="' + target + '">' + params[0] + '</a>';
 				case 'linkentry':
 					var target = undefined;
 					if (params.length !== 0)
