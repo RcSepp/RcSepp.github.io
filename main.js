@@ -386,8 +386,10 @@ Oak Ridge TN, 37830<br>
 					var brief = addElement(bannerContainer, "p", { innerText: c.brief });
 				if (c.year)
 					addElement(bannerContainer, "p", { className: "leftTag", innerText: "Year: " + c.year });
-				if (c.languages && c.languages.length !== 0)
+				if (c.type === 'project' && c.languages && c.languages.length !== 0)
 					addElement(bannerContainer, "p", { className: "rightTag", innerText: (c.languages.length === 1 ? "Language: " : "Languages: ") + c.languages.join(", ") });
+				else if (c.type === 'publication')
+					addElement(bannerContainer, "p", { className: "rightTag", innerText: isString(c.subtype) ? c.subtype : c.subtype.join(", ") });
 			});
 		
 		if (view === 'projects')

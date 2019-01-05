@@ -194,10 +194,14 @@ function GLBanners(canvas, gl, content, contentType, skipIntroAnimation)
 			}
 			
 			// Draw right tag
-			if (c.languages && c.languages.length !== 0)
+			if (c.type == 'publication' || (c.languages && c.languages.length !== 0))
 			{
 				setFont(canvas.rightTag);
-				var text = (c.languages.length === 1 ? "Language: " : "Languages: ") + c.languages.join(", ");
+				var text;
+				if (c.type === 'project')
+					text = (c.languages.length === 1 ? "Language: " : "Languages: ") + c.languages.join(", ");
+				else if (c.type === 'publication')
+					text = isString(c.subtype) ? c.subtype : c.subtype.join(", ");
 				bannerContext.fillText(
 					text,
 					bannerRight - bannerContext.measureText(text).width,
