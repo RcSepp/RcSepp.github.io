@@ -428,12 +428,23 @@ position: absolute;
 .resumeTable th, .resumeTable td {
 	padding: 4px;
 }
-tr.linkRow:hover {
+.linkRow:hover {
 	background-color: #fec;
 }
 a.linkRow {
-	display: block;
 	width: 100%;
 	height: 100%;
 	text-decoration: none;
+}
+.linkRowBody {
+	position:relative;
+	pointer-events: none;
+	z-index: 1;
+}
+.linkRowBody a {
+	pointer-events: all;
+}
+.overlay {
+	position:absolute;
+	left:0; top:0; bottom:0; right:0;
 }

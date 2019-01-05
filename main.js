@@ -181,9 +181,21 @@ return;*/
 					if (details !== '') details += ".";
 					if (params.length >= 5 && params[5] !== '') details = (details === '' ? '' : details + "<br>") + params[5];
 					if (target)
-						return "<tr class='linkRow'><td align='right' valign='top'><a class='linkRow' href='" + target + "'>" + params[0] + "</a></td><td valign='top'><a class='linkRow' href='" + target + "'>" + details + "</a></td></tr>";
+						return `<tr class='linkRow'>
+									<td align='right' valign='top'>
+										<a class="overlay" href="{2}" style="position:absolute"></a>
+										<div class="linkRowBody">{0}</div>
+									</td>
+									<td valign='top'>
+										<a class="overlay" href="{2}" style="position:absolute"></a>
+										<div class="linkRowBody">{1}</div>
+									</td>
+								</tr>`.format(params[0], details, target);
 					else
-						return "<tr><td align='right' valign='top'>" + params[0] + "</td><td valign='top'>" + details + "</td></tr>";
+						return `<tr>
+									<td align='right' valign='top'>{0}</td>
+									<td valign='top'>{1}</td>
+								</tr>`.format(params[0], details);
 				case 'begin':
 				case 'end':
 				case 'moderncvstyle':
@@ -221,6 +233,7 @@ return;*/
 			
 			// Handle escaped characters
 			tex = tex.replace(/\\#/g, "#");
+			tex = tex.replace(/\\&/g, "&");
 			
 			tex = "<br><table class='resumeTable' cellspacing='0' cellpadding='0'>" + tex + "</table>";
 			//console.log(tex);
@@ -230,12 +243,6 @@ return;*/
 			element.className = "tex2jax_process";
 			element.innerHTML = tex;
 			divContent.appendChild(element);
-			
-			// Set anchor height to parent height
-			$('a.linkRow').each(function() {
-				var $a = $(this);
-				$a.height($a.closest('td').height());
-			});
 		}
 	}
 	request.send();
