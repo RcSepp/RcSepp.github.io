@@ -18,6 +18,7 @@
 \usepackage[T1]{fontenc}
 
 \newcommand{\linkentry}[2]{\cventry{#2}}
+\newcommand{\linksection}[2]{#2}
 
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
@@ -44,14 +45,16 @@
 \vspace*{-2mm}
 
 %----------------------------------------------------------------------------------------
-%	OBJECTIVE SECTION
+%	SUMMARY SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Objective}
+\section{Summary}
 
-\cventry{}{\textnormal{To secure a challenging position in software engineering research}}{}{}{}{}
+\cventry{}{\textnormal{Experienced and self-driven Software Engineer with strong research experience in the fields of \textbf{parallel programming models}, \textbf{heteroganeous computing}, \textbf{machine learning}, \textbf{computer graphics} and \textbf{data visualization} and a solid track record of open source contributions. Skilled in \textbf{C++} (12 years), \textbf{C\#} (10 years) and \textbf{Python} (6 years)}}{}{}{}{}
 
-\vspace{1cm}
+\vspace{0.5cm}
+
+%{To secure a challenging position in software engineering research}
 
 %{To secure a challenging position as a research oriented senior software engineer in an industry leading company or research facility}{}{}{}{}
 
@@ -59,28 +62,24 @@
 %{To secure a challenging position as a research oriented software engineer in an industry leading company or research facility in the visualization, HPC or computer game industry. Preferably with a strong emphasis on home-brewed innovations over off-the-shelf solutions.}{}{}{}{}
 
 %----------------------------------------------------------------------------------------
-%	THESES SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Theses}
-
-\linkentry{ScalabilityofModernScatterplotVisualizationsforLargeImageDatasets}{Master's Thesis}{Scalability of Modern Scatterplot Visualizations for Large Image Datasets}{}{}{}{Investigating scatterplot scalability both in terms of what is feasable (performance scalability) and what is reasonable (information scalability).}
-
-\linkentry{SolvingCommunication-IntensiveProblemsEfficientlyUsingOn-ChipMeshInterconnectionNetworks}{Bachelor's Thesis}{Solving Communication-Intensive Problems Efficiently Using On-Chip Mesh Interconnection Networks}{}{}{}{Design and simulation of a three dimensional mesh-connected array processor.}
-
-%----------------------------------------------------------------------------------------
 %	PUBLICATIONS SECTION
 %----------------------------------------------------------------------------------------
 
 \section{Publications}
 
+\linkentry{MODISandVIIRSSubsettingandVisualizationTools}{10.2018}{A platform for retrieval, analytics, and visualization of MODIS \& VIIRS land products}{Shrestha R., Boyer A.G., Vannan S., Klaassen S., McNelis J.J., Thornton M.M., Wilson B.E.}{October 2018 VIIRS/MODIS Science Team Meeting Poster}{}{}
+
 \linkentry{ColorMoves_Paper}{01.2018}{ColorMoves: Real-time Interactive Colormap Construction for Scientific Visualization}{Samsel F., Klaassen S. and Rogers D.H.}{IEEE computer graphics and applications}{IEEE Computer Graphics and Applications, 38(1), pp.20-29}{}{}
+
+\linkentry{ScalabilityofModernScatterplotVisualizationsforLargeImageDatasets}{10.2017}{Scalability of Modern Scatterplot Visualizations for Large Image Datasets}{Klaassen S.}{Master's thesis}{}{}%{Investigating scatterplot scalability both in terms of what is feasable (performance scalability) and what is reasonable (information scalability).}
 
 \linkentry{DataMiningAtomicallyResolvedImagesforMaterialProperties}{08.2017}{Data Mining Atomically Resolved Images for Material Properties}{Klaassen S.}{2017 Smokey Mountain Computational Science and Engineering Conference Data Challenge Poster}{}{}
 
-\linkentry{SolvingCommunication-IntensiveProblemsEfficientlyUsingOn-ChipMeshInterconnectionNetworks}{06.2016}{Solving Communication-Intensive Problems Efficiently Using On-Chip Mesh Interconnection Networks}{Klaassen S.}{2016 ISC HPC Conference Research Poster}{}{}%{\url{http://www.isc-hpc.com/isc16_ap/presentationdetails.htm?t=presentation&o=958&a=select&ra=personendetails}}{}
+\linkentry{SolvingCommunication-IntensiveProblemsEfficientlyUsingOn-ChipMeshInterconnectionNetworks}{06.2016}{Solving Communication-Intensive Problems Efficiently Using On-Chip Mesh Interconnection Networks}{Klaassen S.}{2016 ISC HPC Conference Research Poster}{}{}
 
 \linkentry{InteractiveColormapping}{05.2016}{Interactive colormapping: Enabling multiple data range and detailed views of ocean salinity}{Samsel F., Klaassen S., Petersen M., Turton T.L., Abram G., Rogers D.H. and Ahrens J.}{In Proceedings of the 2016 CHI Conference Extended Abstracts on Human Factors in Computing Systems (pp. 700-709). ACM}{}{}
+
+\linkentry{SolvingCommunication-IntensiveProblemsEfficientlyUsingOn-ChipMeshInterconnectionNetworks}{06.2013}{Solving Communication-Intensive Problems Efficiently Using On-Chip Mesh Interconnection Networks}{Bachelor's Thesis}{}{}{}%{Design and simulation of a three dimensional mesh-connected array processor.}
 
 %----------------------------------------------------------------------------------------
 %	SCIENTIFIC COLLABORATION SECTION
@@ -120,16 +119,18 @@
 \section{Work experience}
 
 \cventry{since 04.2018}{Software Engineer}{Oak Ridge National Lab}{\url{https://ornl.gov/}}{}{
-Development of a RESTful web service for the MODIS environmental data subsetting tool (\url{https://modis.ornl.gov/data/modis_webservice.html}). The low latency and high reliability of this service has resulted in a lot of positive feedback from the scientific community and an increase in usage to 500.000 requests per week.\\
+\linksection{MODISRESTWebService}{1) Development of a RESTful web service for the MODIS environmental data subsetting tool. The low latency and high reliability of this service has resulted in a lot of positive feedback from the scientific community and an increase in usage to 500.000 requests per week.}\\
+2) Automatic detection of roots in minirhizotron images using fully convolutional deep learning networks with TensorFlow.\\
+\linksection{DAACMetricsProcessorandDashboard}{3) Development of a unified DevOps framework for running and monitoring utility scripts at the NASA ORNL Data Active Archive Center.}\\
 }
 
 \cventry{03.2017--09.2017}{Contract Engineer}{Allen Institute for Cell Science}{\url{http://www.allencell.org/}}{}{
-Development of a successor to the Interactive Plotting tool on the Allen Cell web page to ensure interactivity as more cells are added to the dataset. The programmed WebGL based scatter plot outperforms existing client side charting software, by interactively rendering datasets of over a million cells.\\
+\linksection{ExaPlot}{Development of a successor to the Interactive Plotting tool on the Allen Cell web page to ensure interactivity as more cells are added to the dataset. The programmed WebGL based scatter plot outperforms existing client side charting software, by interactively rendering datasets of over a million cells.}\\
 }
 
-\cventry{05.2015--02.2016}{Internship}{Los Alamos National Lab}{\url{http://lanl.gov/}}{Los Alamos, NM}{
-1) Development of a data analysis tool for in-situ exploration of large scale image databases. The implemented image viewer allows exploration of image datasets in excess of available graphic memory, by streaming images to the GPU asynchronousely.\\
-2) Development of an application for interactively designing color maps. The tool gives scientists unprecedented insight into their data by enabling a novel form of data exploration through interactive changes to the colormap.\\
+\cventry{05.2015--02.2016}{Research Intern}{Los Alamos National Lab}{\url{http://lanl.gov/}}{Los Alamos, NM}{
+\linksection{GlobalView}{1) Development of a data analysis tool for in-situ exploration of large scale image databases. The implemented image viewer allows exploration of image datasets in excess of available graphic memory, by streaming images to the GPU asynchronousely.}\\
+\linksection{ColorMoves}{2) Development of an application for interactively designing color maps. The tool gives scientists unprecedented insight into their data by enabling a novel form of data exploration through interactive changes to the colormap.}\\
 }
 
 \cventry{04.2014--04.2015}{Research Assistant}{University of Vienna - Research group Visualization and Data Analysis}{\url{http://cs.univie.ac.at/vda}}{Austria: Vienna}{
@@ -140,7 +141,7 @@ Implementation of a novel ray tracing algorithm.\\
 	Various software projects - Computer games, web apps and desktop applications written in C++, Python, C\# and Java Script (see homepage \url{https://rcsepp.github.io/}).\\
 }
 
-\cventry{08.2007 and 08.2008}{Internship}{International Institute for Applied Systems Analysis}{\url{http://www.iiasa.ac.at}}{Austria: Laxenburg}{
+\cventry{08.2007 and 08.2008}{Intern}{International Institute for Applied Systems Analysis}{\url{http://www.iiasa.ac.at}}{Austria: Laxenburg}{
 1) Preparation of environmental data for database upload.\\
 2) Integration of the JasperReports library into the web interface.\\
 }
@@ -153,8 +154,20 @@ Implementation of a novel ray tracing algorithm.\\
 
 \linkentry{DataMiningAtomicallyResolvedImagesforMaterialProperties}{2017}{SMC Data Challenge 2017}{Smokey Mountain Computational Science and Engineering Conference}{\url{https://smc-datachallenge.ornl.gov/2017/}}{\textbf{Best Solution}}%{for tracking atoms in a sequence of scanning transmission electron microscopy images}
 {Data mining atomically resolved images for material properties}
-\cventry{2009}{ARGE 3D-CAD Competition}{Category: ProEngineer - Advanced}{\url{http://www.3d-cad.at}}{\textbf{1\textsuperscript{st} Place}}{3D model and animation of the thesis \emph{Automated Guided Vehicle}}
+\cventry{2009}{ARGE 3D-CAD Competition}{}{\url{http://www.3d-cad.at}}{\textbf{1\textsuperscript{st} Place}}{3D model and animation of the thesis \emph{Automated Guided Vehicle}}
 \cventry{2004}{ARGE 3D-CAD Competition}{}{\url{http://www.3d-cad.at}}{\textbf{2\textsuperscript{nd} Place}}{3D model and animation of a recreational vehicle}
+
+\vspace{1cm}
+
+%----------------------------------------------------------------------------------------
+%	OPEN SOURCE CONTRIBUTIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Open Source Contributions}
+
+\linkentry{asyncframes}{2018}{asyncframes}{}{\url{https://github.com/RcSepp/asyncframes}}{}{A concurrency-by-default programming model based on hierarchical coroutines that approaches scalable parallel programming in Python from a software engineering perspective.}
+
+\linkentry{ExaPlot}{2017}{ExaPlot}{}{\url{https://github.com/RcSepp/GlobalView.js}}{}{A JavaScript library for rendering scatterplots of very large datasets using WebGL.}
 
 %----------------------------------------------------------------------------------------
 %	COMPUTER SKILLS SECTION
@@ -165,7 +178,7 @@ Implementation of a novel ray tracing algorithm.\\
 \cvitem{Languages}{C++, C, C\#, Python, Visual Basic, JavaScript, Java, NASM, Matlab, R, Perl}
 \cvitem{Graphics}{Direct3D, OpenGL, WebGL, Vulkan, Ray Tracing}
 \cvitem{Web \& Data}{Python Flask, AWS, jQuery, D3.js, SQL, NoSQL}
-%\cvitem{Dev. Software}{GIT, Visual Studio, Visual Studio Code, GCC, Eclipse}
+\cvitem{DevOps}{GIT, Docker, Elasticsearch, Travis CI, Coveralls}
 \cvitem{Libraries}{STL, Boost, TensorFlow, MPI, OpenMP, BLAS, LAPACK, CUDA}
 
 %----------------------------------------------------------------------------------------

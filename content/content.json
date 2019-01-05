@@ -21,7 +21,7 @@
 		},
 		{
 			"type": "publication",
-			"subtype": "Thesis",
+			"subtype": ["Thesis", "Research Poster"],
 			"year": 2013,
 			"title": "Solving Communication-Intensive Problems Efficiently Using On-Chip Mesh Interconnection Networks",
 			"brief": "My Bachelor's thesis about a mesh-connected array processor architecture was presented with a research poster at ISC HPC 2016.",
@@ -83,6 +83,18 @@
 			}
 		},
 		{
+			"type": "publication",
+			"subtype": "Research Poster",
+			"year": 2018,
+			"title": "MODIS and VIIRS Subsetting and Visualization Tools",
+			"brief": "A subsetting and visualization tools suite for on-demand retrieval of user-defined subsets of several MODIS and VIIRS land products in user-friendly formats and scales.",
+			"images": ["MODIS_Poster.jpg|3024|2592"],
+			"thumbnail": "content/thumbnails/MODIS_banner.jpg",
+			"links": {
+				"Poster": "https://modis.gsfc.nasa.gov/sci_team/meetings/201810/posters/shrestha.pdf"
+			}
+		},
+		{
 			"type": "project",
 			"subtype": "Library",
 			"year": 2018,
@@ -117,8 +129,9 @@
 			"images": [],
 			"thumbnail": "content/thumbnails/MODIS_banner.jpg",
 			"links": {
-				"API Home": "https://modis.ornl.gov/data/modis_webservice.html",
-				"API User Interface": "https://modis.ornl.gov/rst/ui/",
+				"DOI": "https://doi.org/10.3334/ORNLDAAC/1600",
+				"MODIS Web Service Home": "https://modis.ornl.gov/data/modis_webservice.html",
+				"MODIS Web Service User Interface": "https://modis.ornl.gov/rst/ui/",
 				"MODIS Home": "https://modis.ornl.gov"
 			}
 		},
