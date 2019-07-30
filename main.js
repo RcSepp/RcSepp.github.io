@@ -122,7 +122,7 @@ function loadResume()
 return;*/
 	
 	var request = new XMLHttpRequest();
-	request.open("GET", "content/Resume - Sebastian Klaassen.tex", true);
+	request.open("GET", "resume/Resume - Sebastian Klaassen.tex", true);
 	//request.overrideMimeType("application/x-tex; charset=utf8");
 	request.overrideMimeType("text/plain; charset=utf8");
 	request.onload = function(event) {
@@ -295,7 +295,7 @@ Computer Scientist<br>
 Oak Ridge TN, 37830<br>
 <img src="email.jpg"></img>
 <h2>Resume</h2>
-<a href='content/Resume - Sebastian Klaassen.pdf' target='_blank'>PDF download</a>
+<a href='resume/Resume - Sebastian Klaassen.pdf' target='_blank'>PDF download</a>
 `
 		});
 		loadResume();
