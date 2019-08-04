@@ -239,6 +239,7 @@ return;*/
 			
 			// Remove newline
 			tex = tex.replace(/\\\\/g, "<br>");
+			tex = tex.replace(/\\newline/g, "<br>");
 			
 			// Handle escaped characters
 			tex = tex.replace(/\\#/g, "#");
