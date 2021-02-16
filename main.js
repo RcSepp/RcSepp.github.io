@@ -224,8 +224,8 @@ return;*/
 				case 'homepage':
 				case 'makecvtitle':
 				case 'newcommand':
-					console.log(cmd);
-					console.log(params);
+					//console.log(cmd);
+					//console.log(params);
 					return ''; // Ignore
 				default: return match; // Keep
 				}
@@ -293,7 +293,7 @@ function onContentLoaded(content, view)
 `
 <h2>Sebastian Klaassen</h2>
 Computer Scientist<br>
-Oak Ridge TN, 37830<br>
+West Vancouver, Canada<br>
 <img src="email.jpg"></img>
 <h2>Resume</h2>
 <a href='resume/Resume - Sebastian Klaassen.pdf' target='_blank'>PDF download</a>
