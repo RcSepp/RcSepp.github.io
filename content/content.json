@@ -97,6 +97,21 @@
 		{
 			"type": "project",
 			"subtype": "Library",
+			"year": 2021,
+			"title": "minc",
+			"brief": "A multi-language compiler framework.",
+			"details": "file:///content/minc.md",
+			"languages": ["C++"],
+			"images": ["minc.jpg|2110|512"],
+			"thumbnail": "content/thumbnails/minc_icon.jpg",
+			"links": {
+				"GitHub repository": "https://github.com/RcSepp/minc",
+				"License": "https://raw.githubusercontent.com/RcSepp/minc/master/LICENSE|MIT License"
+			}
+		},
+		{
+			"type": "project",
+			"subtype": "Library",
 			"year": 2018,
 			"title": "asyncframes",
 			"brief": "A parallel programming model based on Python coroutines.",
