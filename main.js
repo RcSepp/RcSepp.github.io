@@ -293,7 +293,6 @@ function onContentLoaded(content, view)
 `
 <h2>Sebastian Klaassen</h2>
 Computer Scientist<br>
-West Vancouver, Canada<br>
 <img src="email.jpg"></img>
 <h2>Resume</h2>
 <a href='resume/Resume - Sebastian Klaassen.pdf' target='_blank'>PDF download</a>
