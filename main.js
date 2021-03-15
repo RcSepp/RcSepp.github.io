@@ -224,6 +224,7 @@ return;*/
 				case 'homepage':
 				case 'makecvtitle':
 				case 'newcommand':
+				case 'newpage':
 					//console.log(cmd);
 					//console.log(params);
 					return ''; // Ignore
