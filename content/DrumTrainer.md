@@ -3,7 +3,7 @@ I programmed DrumTrainer, because I wanted to play may favorite game at the time
 (This was before the capability to use e-drums via MIDI connector was introduced with Rock Band 3 in 2010.)
 
 ## Time Line
-I made 4 versions of DrumTrainer over the years. RBC is the initial prototype. DrumTrainer is the main program. DrumTrainer2 and DrumTrainer3 are adaptions of the DrumTrainer code base to the [IronSightEngine](https://rcsepp.github.io/index.html?view=IronSightEngine) and to C# respectively.
+I made 4 versions of DrumTrainer over the years. RBC is the initial prototype. DrumTrainer is the main program. DrumTrainer2 and DrumTrainer3 are adaptions of the DrumTrainer code base to the [IronSightEngine](https://rcsepp.github.io/content.html?view=IronSightEngine) and to C# respectively.
 
 #### RBC (Rock Band Clone) (2008)
 I started this project in 2008. Since it was planned as a remake of the game Rock Band with e-drum support, I shamelessly called it RBC (Rock Band Clone).
@@ -29,8 +29,8 @@ I added the following features on top of RBC:
 
 
 #### DrumTrainer2 (2012)
-This version uses the [IronSightEngine](https://rcsepp.github.io/index.html?view=IronSightEngine).
+This version uses the [IronSightEngine](https://rcsepp.github.io/content.html?view=IronSightEngine).
 
 
 #### DrumTrainer3 (2015)
-This version is implemented in C#, using C# bindings for the [IronSightEngine](https://rcsepp.github.io/index.html?view=IronSightEngine).
+This version is implemented in C#, using C# bindings for the [IronSightEngine](https://rcsepp.github.io/content.html?view=IronSightEngine).

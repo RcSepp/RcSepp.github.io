@@ -1,118 +1,279 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!doctype html>
+<html lang="en">
 <head>
-	<!-- BEGIN: Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109180033-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		gtag('config', 'UA-109180033-1');
-	</script>
-	<!-- END: Global site tag (gtag.js) - Google Analytics -->
-
-	<title>Sebastian Klaassen's Portfolio</title>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="main.css">
-	<script type="text/javascript" src="lib/showdown.min.js"></script>
-	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-	<script type="text/javascript" src="lib/selectize.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="lib/selectize.css"/>
-	<link rel="stylesheet" href="lib/photoswipe.css">
-	<link rel="stylesheet" href="lib/photoswipe-default-skin/default-skin.css">
-	<script src="lib/photoswipe.min.js"></script>
-	<script src="lib/photoswipe-ui-default.min.js"></script>
-	<script type="text/javascript" src="lib/gl-matrix.min.js"></script>
-	<script type="text/javascript" src="utility.js"></script>
-	<script type="text/javascript" src="main.js"></script>
-	<script type="text/javascript" src="graphics.js"></script>
-	<script type="text/javascript" src="glBanners.js"></script>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/modal-video.min.css">
 	
-<!--<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-	tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
-	TeX: { equationNumbers: { autoNumber: "AMS" } }
-});
-</script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'></script>-->
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<title>Hello, world!</title>
 </head>
 
-<body onload="onLoad()" onresize="onResize()" class="tex2jax_ignore">
-	<div id="content"></div>
-	<div id='measureDiv' style='position: absolute; height: 1in; width: 1in; visibility: hidden'></div>
-	<div id="navTop">
-		<button id="cmdOpenTopMenu" onclick="cmdOpenTopMenu_onclick(this)">&#8801;</button>
-		<a id="aTitle" href="./index.html">Sebastian Klaassen</a>
-		<p id="aSubtitle">Welcome to my homepage</a>
-		<ul id="ulMain">
-			<li><a href="./index.html">Home</a></li>
-			<li><a href="./index.html?view=publications">Publications</a></li>
-			<li><a href="./index.html?view=projects">Projects</a></li>
-			<li></li>
-		</ul>
-		<div id="navTop_withMenu"></div>
+<body id="main-scrollbar" data-glow-color="#fdeb8a">
+
+<section class="full_width">
+	<div class="container">
+		<!-- 1 -->
+		<div class="thumbnail">
+			<a href="#" class="js-video-button" data-channel="video" data-video-url="//rcsepp.github.io/content/GlobalView_visual_mapping.mp4">
+				<video preload="auto" muted>
+					<source src="content/GlobalView-short_version.mp4" type='video/mp4;' />
+				</video>
+			</a>
+
+			<span class="thumbnail__text">Project GlobalView<br>High dimensional data visualization</span>
+			<div class="thumbnail__timeline thumbnail__timeline--ghost"></div>
+			<div class="thumbnail__timeline thumbnail__timeline--progress"></div>
+			<div class="thumbnail__loader"></div>
+		</div>
+
+		<!-- 2 -->
+		<div class="thumbnail">
+			<a class="js-video-button" data-channel="video" data-video-url="//rcsepp.github.io/content/AGV.mp4">
+				<video preload="auto" muted>
+					<source src="content/AGV-short_version.mp4" type='video/mp4;' />
+				</video>
+			</a>
+
+			<span class="thumbnail__text">Project AGV<br>Autonomous delivery robot</span>
+			<div class="thumbnail__timeline thumbnail__timeline--ghost"></div>
+			<div class="thumbnail__timeline thumbnail__timeline--progress"></div>
+			<div class="thumbnail__loader"></div>
+		</div>
+
+		<!-- 3 -->
+		<div class="thumbnail">
+			<a class="js-video-button" data-channel="video" data-video-url="//rcsepp.github.io/content/Material_Mining.mp4">
+				<video preload="auto" muted>
+					<source src="content/Material_Mining-short_version.mp4" type='video/mp4;' />
+				</video>
+			</a>
+
+			<span class="thumbnail__text">Project Atom Tracking<br>AI powered atom tracing in electron microscopy images</span>
+			<div class="thumbnail__timeline thumbnail__timeline--ghost"></div>
+			<div class="thumbnail__timeline thumbnail__timeline--progress"></div>
+			<div class="thumbnail__loader"></div>
+		</div>
 	</div>
-	
-	<!-- Root element of PhotoSwipe. Must have class pswp. -->
-	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+</section>
 
-		<!-- Background of PhotoSwipe.
-			It's a separate element as animating opacity is faster than rgba(). -->
-		<div class="pswp__bg"></div>
-
-		<!-- Slides wrapper with overflow:hidden. -->
-		<div class="pswp__scroll-wrap">
-
-			<!-- Container that holds slides. 
-				PhotoSwipe keeps only 3 of them in the DOM to save memory.
-				Don't modify these 3 pswp__item elements, data is added later on. -->
-			<div class="pswp__container">
-				<div class="pswp__item"></div>
-				<div class="pswp__item"></div>
-				<div class="pswp__item"></div>
+<section class="full_width_mid">
+	<div class="container">
+		
+		<div class="frosted-glass">
+			<h1 class="title">Sebastian Klaassen</h1>
+			
+			<div class="row sm_btn_group1">
+				<div class="col-md-2 offset-md-3">
+					<a href="content.html">
+						<button class="big-button">
+							Resume
+						</button>
+					</a>
+				</div>
+				<div class="col-md-2 sm_btn">
+					<a href="content.html?view=projects">
+						<button class="big-button">
+							Projects
+						</button>
+					</a>
+				</div>
+				<div class="col-md-2 sm_btn">
+					<a href="content.html?view=publications">
+						<button class="big-button">
+							Publications
+						</button>
+					</a>
+				</div>
 			</div>
+		</div>
+		
+	</div>
+	<!-- Name and Button end -->
+	
+	<div class="container-fluid">
+		<div class="row">
+			<div class="owl-carousel owl-theme bottom_section_slide">
+				<div class="item">
+					<div class="sm_item_img">
+						<img src="content/thumbnails/minc_icon.jpg" alt="" class="img-fluid">
+						<div class="sm_item_content">
+							<h4>Minc</h4>
+							<p class="sm_item_content_meta">The compiler for mixing programming languages</p>
+						</div>
+						<div class="overlay">
+							<div class="text">
+								<a href="#">
+									<h4>Mix any number of compiled or interpreted programming languages within a single file with zero glue code</h4>
+								</a>
 
-			<!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-			<div class="pswp__ui pswp__ui--hidden">
-
-				<div class="pswp__top-bar">
-
-					<!--  Controls are self-explanatory. Order can be changed. -->
-					<div class="pswp__counter"></div>
-					<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-					<button class="pswp__button pswp__button--share" title="Share"></button>
-					<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-					<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-					<!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-					<!-- element will get class pswp__preloader--active when preloader is running -->
-					<div class="pswp__preloader">
-						<div class="pswp__preloader__icn">
-							<div class="pswp__preloader__cut">
-							<div class="pswp__preloader__donut"></div>
+								<div class="btn_details_common">
+									<a href="#">Details</a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				<!-- End a Single Item -->
+				
+				<div class="item">
+					<div class="sm_item_img">
+						<img src="content/thumbnails/Raytracer.jpg" alt="" class="img-fluid">
+						<div class="sm_item_content">
+							<h4>Raytracer</h4>
+							<p class="sm_item_content_meta">Raytracer with refractions, bumpmapping and supersampling</p>
+						</div>
+						<div class="overlay">
+							<div class="text">
+								<a href="#">
+									<h4>A university project for the Introduction to Computer Graphics course (fall 2013)</h4>
+								</a>
 
-				<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-					<div class="pswp__share-tooltip"></div> 
+								<div class="btn_details_common">
+									<a href="#">Details</a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
+				<!-- End a Single Item -->
+				
+				<div class="item">
+					<div class="sm_item_img">
+						<img src="content/asyncframes.png" alt="" class="img-fluid">
+						<div class="sm_item_content">
+							<h4>asyncframes</h4>
+							<p class="sm_item_content_meta">Asynchronous Python programming with hierarchical code frames</p>
+						</div>
+						<div class="overlay">
+							<div class="text">
+								<a href="#">
+									<h4>Create highly parallel Python code by writing awaitable code segments called frames</h4>
+								</a>
 
-				<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-				</button>
-
-				<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-				</button>
-
-				<div class="pswp__caption">
-					<div class="pswp__caption__center"></div>
+								<div class="btn_details_common">
+									<a href="#">Details</a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
+				<!-- End a Single Item -->
+				
+				<div class="item">
+					<div class="sm_item_img">
+						<img src="content/MODIS-VIIRS_Banner.jpg" alt="" class="img-fluid">
+						<div class="sm_item_content">
+							<h4>MODIS REST Web Service</h4>
+							<p class="sm_item_content_meta">The web interface of NASA's biogeochemistry land products captured by MODIS and VIIRS satellites</p>
+						</div>
+						<div class="overlay">
+							<div class="text">
+								<a href="#">
+									<h4>This RESTful web service is used by data scientists worldwide to programatically access multispectral satellite images captured by NASA's MODIS and VIIRS satellites.</h4>
+								</a>
+
+								<div class="btn_details_common">
+									<a href="#">Details</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End a Single Item -->
+				
+				<div class="item">
+					<div class="sm_item_img">
+						<img src="content/ColorMoves-Before-After.png" alt="" class="img-fluid">
+						<div class="sm_item_content">
+							<h4>ColorMoves</h4>
+							<p class="sm_item_content_meta">Interactive color mapping</p>
+						</div>
+						<div class="overlay">
+							<div class="text">
+								<a href="#">
+									<h4>A tool for interactively composing color maps to visualize hidden patterns in high resolution image data.</h4>
+								</a>
+
+								<div class="btn_details_common">
+									<a href="#">Details</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End a Single Item -->
 			</div>
 		</div>
 	</div>
+</section>
+
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script type="text/javascript" src="js/jquery-3.5.1.slim.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+
+<script type="text/javascript" src="js/jquery-modal-video.min.js"></script>
+
+<script type="text/javascript" src="js/smooth-scrollbar.js"></script>
+<script type="text/javascript" src="js/overscroll.js"></script>
+
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+
+
+
+<script type="text/javascript" src="js/query.js"></script>
+
+<script>
+	$(".js-video-button").modalVideo({
+		youtube:{
+			controls:0,
+			nocookie: true
+		}
+	});
+</script>
+<script>
+	$(document).ready(function() {
+	$('.owl-carousel').owlCarousel({
+		loop: true,
+		margin: 15,
+		nav: true,
+		dots: true,
+		autoplay: true,
+		autoplayTimeout: 2000,
+		autoplayHoverPause: true,
+		
+		responsiveClass: true,
+		
+		responsive: {
+		0: {
+			items: 1,
+			nav: true
+		},
+		600: {
+			items: 3,
+			nav: true
+		},
+		1000: {
+			items: 5,
+			nav: true,
+			loop: true,
+			margin: 25
+		}
+		}
+	})
+	
+	});
+</script>
+
 </body>
 </html>

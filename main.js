@@ -169,7 +169,7 @@ return;*/
 					{
 						var targetParam = params.shift();
 						if (isString(targetParam) && targetParam.length !== 0)
-							target = "index.html?view=" + targetParam;
+							target = "content.html?view=" + targetParam;
 					}
 					return '<a class="linkRow" href="' + target + '">' + params[0] + '</a>';
 				case 'linkentry':
@@ -178,7 +178,7 @@ return;*/
 					{
 						var targetParam = params.shift();
 						if (isString(targetParam) && targetParam.length !== 0)
-							target = "index.html?view=" + targetParam;
+							target = "content.html?view=" + targetParam;
 					}
 					// Falls through
 				case 'cventry':
@@ -294,7 +294,7 @@ function onContentLoaded(content, view)
 `
 <h2>Sebastian Klaassen</h2>
 Computer Scientist<br>
-<img src="email.jpg"></img>
+<img src="images/email.jpg"></img>
 <h2>Resume</h2>
 <a href='resume/Resume - Sebastian Klaassen.pdf' target='_blank'>PDF download</a>
 `
@@ -393,7 +393,7 @@ Computer Scientist<br>
 				var id = makeId(c.title, c.id);
 				var thumbnail = c.thumbnail;// || (c.images && c.images.length !== 0 ? c.images[0] : null);
 				
-				var banner = addElement(divContent, "a", { id: "projectBanner", className: "content", href: "./index.html?view=" + id, content: c, index: i });
+				var banner = addElement(divContent, "a", { id: "projectBanner", className: "content", href: "./content.html?view=" + id, content: c, index: i });
 				
 				if (thumbnail) addElement(banner, "img", { src: thumbnail, alt: c.title });
 				
@@ -601,14 +601,14 @@ videosrc: imageUrl
 			{
 				var cmdPrev = addElement(divContent, "button", { innerText: "Prev" });
 				cmdPrev.onclick = function() {
-					window.location.href = "./index.html?view=" + makeId(content[index - 1].title, content[index - 1].id);
+					window.location.href = "./content.html?view=" + makeId(content[index - 1].title, content[index - 1].id);
 				};
 			}
 			if (index + 1 < content.length && content[index + 1].type == )TODO
 			{
 				var cmdNext = addElement(divContent, "button", { innerText: "Next" });
 				cmdNext.onclick = function() {
-					window.location.href = "./index.html?view=" + makeId(content[index + 1].title, content[index + 1].id);
+					window.location.href = "./content.html?view=" + makeId(content[index + 1].title, content[index + 1].id);
 				};
 			}
 			var cmdBack = addElement(divContent, "button", { innerText: "Back" });
@@ -616,7 +616,7 @@ videosrc: imageUrl
 				//while (divContent.hasChildNodes())
 				//	divContent.removeChild(divContent.lastChild);
 				//onContentLoaded(content, c.type + 's', true);
-				window.location.href = "./index.html?view=" + c.type + 's';
+				window.location.href = "./content.html?view=" + c.type + 's';
 			};*/
 			
 			var elementBeforeDetails = addElement(divContent, "h1", { innerText: c.title });

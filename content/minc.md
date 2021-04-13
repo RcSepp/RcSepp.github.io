@@ -1,6 +1,32 @@
 
 ### Details
 
+Minc - the Minimal Compiler - is an ultra flexible programming language, that can load other languages by importing them from code.
+The main advantages of Minc are:
+
+* Mix any number of compiled or interpreted programming languages within a single file with zero glue code
+* Use a single tool chain to manage entire multilingual projects
+* Easily create new languages using the Minc API and embed them within existing languages
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Minc is a programming language that only understands two commands: "import" and "export". More commands (including entire programming languages) are imported using the import command.
 
 Minc includes a powerful SDK for creating programming languages by defining statements, expressions and casts. It supports both compiled langauges (in combination with a compiler framework, like [LLVM](https://llvm.org/)) and interpreted languages (using minc's own runtime).
