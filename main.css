@@ -32,7 +32,7 @@ a:hover, a:active {
 }
 
 #navTop {
-	background-color: lightgray;
+	background-image: url("images/home_background.jpg");
 	
 	width: 30vw;
 	height: 100%;
@@ -47,7 +47,7 @@ a:hover, a:active {
 	position: relative;
 }
 #navTop_withMenu {
-	background-color: lightgray;
+	background-color: transparent;
 	z-index: 1;
 	display: none;
 	
@@ -59,7 +59,7 @@ a:hover, a:active {
 }
 @media screen and (max-width: 960px) {
 	#navTop {
-		background-color: lightgray;
+		background-image: url("images/home_background.jpg");
 		
 		width: 100vw;
 		height: 30vw;
