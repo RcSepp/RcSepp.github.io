@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Montserrat", sans-serif;
-    background-color: #003558;
+    background-color: #7D7F8B;
 }
 .mb-30{
     margin-bottom: 30px;
@@ -175,11 +175,11 @@ body#main-scrollbar{
     text-align: center;
     /*padding: 15px 0px;*/
     padding: 15px 0px 5px 0px;
-    font-size: 3em;
+    font-size: 4em;
     font-family: Lato, sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 2px;
-    color: #302D2B;
+    color: white;
 }
 .sm_btn_group1{
     padding: 10px 0px 30px 0px;
@@ -187,7 +187,7 @@ body#main-scrollbar{
 .sm_btn_group{
     padding: 25px 0px;
 }
-@media (max-width: 640px) {
+@media (max-width: 540px) {
   .frosted-glass .title {
     font-size: 24px;
   }
@@ -341,7 +341,7 @@ body#main-scrollbar{
     vertical-align: middle;
     text-decoration: none;
     font-size: 12px;
-    color: rgb(106, 163, 137);
+    color: rgb(106, 137, 163);
     font-weight: 600;
     text-transform: uppercase;
     font-family: inherit;
@@ -357,9 +357,9 @@ body#main-scrollbar{
 
 .full_width_mid button.big-button {
   padding: 7px 15px;
-  border: 1px solid rgb(106, 163, 137);
+  border: 1px solid rgb(124, 112, 123);
   border-radius: 1em;
-  background: rgb(205, 255, 232);
+  background: rgb(255, 236, 205);
   transform-style: preserve-3d;
   transition: all 175ms cubic-bezier(0, 0, 1, 1);
   
@@ -373,16 +373,16 @@ body#main-scrollbar{
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgb(150, 232, 195);
+  background: rgb(104, 116, 110);
   border-radius: inherit;
-  box-shadow: 0 0 0 2px rgb(121, 186, 156), 0 4px 0 0 rgb(106, 163, 137);
+  box-shadow: 0 0 0 2px rgb(106, 116, 111), 0 4px 0 0 rgb(161, 159, 128);
   /*box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.25);*/
   transform: translate3d(0, 3px, -4px);
   transition: all 175ms cubic-bezier(0, 0, 1, 1);
 }
 
 .full_width_mid button.big-button:hover {
-  background: rgb(187, 232, 211);
+  background: rgb(163, 172, 167);
   transform: translate(0, 3px);
 }
 
@@ -396,7 +396,7 @@ body#main-scrollbar{
 
 .full_width_mid button.big-button:active::before {
   transform: translate3d(0, 0, -4px);
-  box-shadow: 0 0 0 2px rgb(121, 186, 156), 0 0.25em 0 0 rgb(121, 186, 156);
+  box-shadow: 0 0 0 2px rgb(84, 88, 86), 0 0.25em 0 0 rgb(101, 110, 106);
 }
 /*======= Video Border ========== */
 .modal-video-movie-wrap {
